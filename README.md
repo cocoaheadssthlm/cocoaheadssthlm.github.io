@@ -1,8 +1,8 @@
 # CocoaHeads Stockholm website
 
 This website aims to be a central place for CocoaHeads Stockholm, making it easy
-to find everyting about the meetups. We always want to improve and contributions
-are very welcome.
+to find everything about the meetups. We always want to improve and
+contributions are very welcome.
 
 ## Dependencies
 

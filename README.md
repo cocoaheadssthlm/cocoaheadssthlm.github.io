@@ -36,3 +36,14 @@ CSS/SCSS:
 - We follow [Aribnb's CSS/Sass guide](https://github.com/airbnb/css.), except
   `lower-case` instead of `PascalCase` for blocks.
 - Structure is inspired by [SMACSS](https://smacss.com/book/categorizing).
+
+## Artwork
+
+Artwork is in the `_artwork` directory and we use the same process as with code
+for changes.
+
+Design specific dependencies are:
+
+- Sketch
+- Fonts [Karla](https://fonts.google.com/specimen/Karla) and [Inconsolata](
+  https://fonts.google.com/specimen/Inconsolata)

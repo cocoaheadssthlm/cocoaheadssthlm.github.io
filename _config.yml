@@ -9,3 +9,13 @@ defaults:
   -
     values:
       layout: "default"
+
+# Custom values
+social_urls:
+  meetup: https://www.meetup.com/CocoaHeads-Stockholm/
+  youtube: https://www.youtube.com/channel/UCdLzBDC5O6J3nJRb8m5PCaQ
+  twitter: https://twitter.com/cocoaheadssthlm
+  facebook: https://www.facebook.com/cocoaheadssthlm/
+  slack: http://bit.ly/ch-sthlm
+collections:
+  - meetups

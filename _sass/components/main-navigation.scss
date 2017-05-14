@@ -1,0 +1,28 @@
+.main-navigation {
+  background-color: $cocoaheads-blue;
+  border-radius: 1px;
+
+  &__items {
+    text-align: center;
+    line-height: 48px;
+
+    & > li {
+      display: inline-block;
+      line-height: 24px;
+
+      & > a {
+        display: inline-block;
+        margin: 0 12px;
+        padding: 0 6px;
+
+        border-radius: 1px;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      & > a:hover {
+        background-color: #fff;
+      }
+    }
+  }
+}

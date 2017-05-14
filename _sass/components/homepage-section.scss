@@ -1,0 +1,19 @@
+@import "common.scss";
+
+.homepage-section {
+  padding: 48px 24px;
+
+  text-align: center;
+
+  & + .homepage-section {
+    border-top: 2px solid $cocoaheads-light-gray;
+    margin-top: -1px;
+    padding-top: 71px;
+  }
+}
+
+@media (min-width: 601px) {
+  .homepage-section {
+    padding: 72px;
+  }
+}

@@ -1,0 +1,47 @@
+---
+---
+<section class="intro">
+  <img src="{{ '/assets/images/mascot.png?v=' | append: site.github.build_revision | relative_url }}" alt="CocoaHeads Stockholm mascot" class="intro__mascot">
+  <div class="intro__text">
+    <h1>CocoaHeads Stockholm</h1>
+    <p>
+      Welcome to CocoaHeads Stockholm! We’re a bunch of people from the greater
+      Stockholm area interested in iOS &amp; Mac development. We get together
+      usually the first Monday each month to talk about Cocoa and stuff related to
+      Cocoa development.
+    </p>
+  </div>
+</section>
+
+<nav class="main-navigation">
+  <ul class="main-navigation__items">
+    <li><a href="{{ site.social_urls.meetup }}">Meetup</a></li>
+    <li><a href="{{ site.social_urls.youtube }}">YouTube</a></li>
+    <li><a href="{{ site.social_urls.twitter }}">Twitter</a></li>
+    <li><a href="{{ site.social_urls.facebook }}">Facebook</a></li>
+    <li><a href="{{ site.social_urls.slack }}">Slack</a></li>
+  </ul>
+</nav>
+
+<section class="homepage-section">
+  <h2>Next meetup</h2>
+  {% for meetup in site.meetups %}
+    <div class="next-meetup-highlight inline-content">
+      <p class="next-meetup-highlight__title">{{ meetup.title }}</p>
+      <p class="next-meetup-highlight__link"><a href="{{ meetup.meetup_url }}">Read more and join on Meetup</a></p>
+    </div>
+  {% endfor %}
+  <p class="homepage-section__social-link">
+    All our meetups are announced on
+    <a href="{{ site.social_urls.meetup }}">Meetup</a>
+  </p>
+</section>
+
+<section class="homepage-section">
+  <h2>Join the conversation</h2>
+  <p class="homepage-section__social-link">
+    Join our vibrant community on <a href="{{ site.social_urls.twitter }}">Twitter</a>,
+    <a href="{{ site.social_urls.facebook }}">Facebook</a> &amp;
+    <a href="{{ site.social_urls.slack }}">Slack</a>
+  </p>
+</section>

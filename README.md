@@ -33,7 +33,7 @@ directly.
 
 CSS/SCSS:
 
-- We follow [Aribnb's CSS/Sass guide](https://github.com/airbnb/css.), except
+- We follow [Aribnb's CSS/Sass guide](https://github.com/airbnb/css), except
   `lower-case` instead of `PascalCase` for blocks.
 - Structure is inspired by [SMACSS](https://smacss.com/book/categorizing).
 

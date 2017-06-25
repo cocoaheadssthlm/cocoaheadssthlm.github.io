@@ -38,6 +38,26 @@
 </section>
 
 <section class="homepage-section">
+  <h2>Latest videos</h2>
+  <div class="inline-content">
+    <ul class="video-highlight">
+      {% for video in site.videos %}
+        <li>
+          <a href="https://www.youtube.com/watch?v={{ video.youtube_id }}">
+            <img src="http://img.youtube.com/vi/{{ video.youtube_id }}/mqdefault.jpg" class="video-highlight__thumbnail"><br>
+            {{ video.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <p class="homepage-section__social-link">
+    Watch all our videos on
+    <a href="{{ site.social_urls.youtube }}">Youtube</a>
+  </p>
+</section>
+
+<section class="homepage-section">
   <h2>Join the conversation</h2>
   <p class="homepage-section__social-link">
     Join our vibrant community on <a href="{{ site.social_urls.twitter }}">Twitter</a>,

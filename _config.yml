@@ -19,3 +19,4 @@ social_urls:
   slack: http://bit.ly/ch-sthlm
 collections:
   - meetups
+  - videos

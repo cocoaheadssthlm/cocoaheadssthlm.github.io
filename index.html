@@ -58,6 +58,20 @@
 </section>
 
 <section class="homepage-section">
+  <h2>Jobs in our community</h2>
+  <div class="inline-content">
+    <ul class="jobs">
+      {% for job in site.jobs %}
+        <li>
+          <h3>{{ job.title }}</h3>
+          {{ job.content }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="homepage-section">
   <h2>Join the conversation</h2>
   <p class="homepage-section__social-link">
     Join our vibrant community on <a href="{{ site.social_urls.twitter }}">Twitter</a>,

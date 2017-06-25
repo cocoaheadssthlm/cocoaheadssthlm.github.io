@@ -1,0 +1,9 @@
+.jobs {
+  & > li {
+    text-align: left;
+
+    & + li {
+      margin-top: 96px;
+    }
+  }
+}

@@ -9,4 +9,4 @@ We offer you an atmosphere with skilled and dedicated employees in a company tha
 
 Read more at [profoto.com/se/careers/ios-engineer](https://profoto.com/se/careers/ios-engineer).
 
-![](./https://github.com/cocoaheadssthlm/cocoaheadssthlm.github.io/raw/master/_jobs/profoto.png)
+![Profoto logo](/assets/images/profoto.png)

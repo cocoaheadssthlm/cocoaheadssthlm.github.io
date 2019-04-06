@@ -1,14 +1,23 @@
 ---
 ---
+
 <section class="intro">
-  <img src="{{ '/assets/images/mascot.png?v=' | append: site.github.build_revision | relative_url }}" alt="CocoaHeads Stockholm mascot" class="intro__mascot">
+  <img
+    src="{{
+      '/assets/images/mascot.png?v='
+        | append: site.github.build_revision
+        | relative_url
+    }}"
+    alt="CocoaHeads Stockholm mascot"
+    class="intro__mascot"
+  />
   <div class="intro__text">
     <h1>CocoaHeads Stockholm</h1>
     <p>
       Welcome to CocoaHeads Stockholm! We’re a bunch of people from the greater
       Stockholm area interested in iOS &amp; Mac development. We get together
-      usually the first Monday each month to talk about Cocoa and stuff related to
-      Cocoa development.
+      usually the first Monday each month to talk about Cocoa and stuff related
+      to Cocoa development.
     </p>
   </div>
 </section>
@@ -26,10 +35,12 @@
 <section class="homepage-section">
   <h2>Next meetup</h2>
   {% for meetup in site.meetups %}
-    <div class="next-meetup-highlight inline-content">
-      <p class="next-meetup-highlight__title">{{ meetup.title }}</p>
-      <p class="next-meetup-highlight__link"><a href="{{ meetup.meetup_url }}">Read more and join on Meetup</a></p>
-    </div>
+  <div class="next-meetup-highlight inline-content">
+    <p class="next-meetup-highlight__title">{{ meetup.title }}</p>
+    <p class="next-meetup-highlight__link">
+      <a href="{{ meetup.meetup_url }}">Read more and join on Meetup</a>
+    </p>
+  </div>
   {% endfor %}
   <p class="homepage-section__social-link">
     All our meetups are announced on
@@ -42,12 +53,15 @@
   <div class="inline-content">
     <ul class="video-highlight">
       {% for video in site.videos %}
-        <li>
-          <a href="https://www.youtube.com/watch?v={{ video.youtube_id }}">
-            <img src="http://img.youtube.com/vi/{{ video.youtube_id }}/mqdefault.jpg" class="video-highlight__thumbnail"><br>
-            {{ video.title }}
-          </a>
-        </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v={{ video.youtube_id }}">
+          <img
+            src="http://img.youtube.com/vi/{{ video.youtube_id }}/mqdefault.jpg"
+            class="video-highlight__thumbnail"
+          /><br />
+          {{ video.title }}
+        </a>
+      </li>
       {% endfor %}
     </ul>
   </div>
@@ -62,10 +76,10 @@
   <div class="inline-content">
     <ul class="jobs">
       {% for job in site.jobs %}
-        <li>
-          <h3>{{ job.title }}</h3>
-          {{ job.content }}
-        </li>
+      <li>
+        <h3>{{ job.title }}</h3>
+        {{ job.content }}
+      </li>
       {% endfor %}
     </ul>
   </div>
@@ -77,19 +91,19 @@
     <div class="code-of-conduct">
       <p>
         In the interest of fostering an open and welcoming environment, we as
-        participants and organizers pledge to making participation in our community
-        a harassment-free and safe experience for everyone, regardless of sex, gender
-        identity, sexual orientation, disability, physical appearance, body size,
-        race, ethnicity, nationality, religion, political views or any other
-        attribute or belief.
+        participants and organizers pledge to making participation in our
+        community a harassment-free and safe experience for everyone, regardless
+        of sex, gender identity, sexual orientation, disability, physical
+        appearance, body size, race, ethnicity, nationality, religion, political
+        views or any other attribute or belief.
       </p>
       <p>
-        We do not tolerate harassment of participants in any form. Sexual language
-        and imagery is not appropriate.
+        We do not tolerate harassment of participants in any form. Sexual
+        language and imagery is not appropriate.
       </p>
       <p>
-        Participants violating these rules may be sanctioned or expelled from our
-        events at the discretion of the organizers.
+        Participants violating these rules may be sanctioned or expelled from
+        our events at the discretion of the organizers.
       </p>
     </div>
   </div>
@@ -98,11 +112,13 @@
 <section class="homepage-section">
   <h2>Join the conversation</h2>
   <p class="homepage-section__social-link">
-    Join our vibrant community on <a href="{{ site.social_urls.twitter }}">Twitter</a>,
+    Join our vibrant community on
+    <a href="{{ site.social_urls.twitter }}">Twitter</a>,
     <a href="{{ site.social_urls.facebook }}">Facebook</a> &amp;
     <a href="{{ site.social_urls.slack }}">Slack</a>
   </p>
   <p class="homepage-section__social-link">
-    For any inquiries, contact Alek at <a href="mailto:alek.astrom@gmail.com">alek.astrom@gmail.com</a>.
+    For any inquiries, contact Alek at
+    <a href="mailto:alek.astrom@gmail.com">alek.astrom@gmail.com</a>.
   </p>
 </section>

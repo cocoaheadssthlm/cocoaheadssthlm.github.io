@@ -6,12 +6,12 @@ contributions are very welcome.
 
 ## Dependencies
 
-- Ruby 2.3.3 and bundler
+- Ruby 2.7.4 and bundler
 
 ## Getting started
 
 1. Clone the repo and make sure you've got Ruby and bundler installed. macOS
-   system Ruby should suffice, otherwise `brew install ruby23` will get you
+   system Ruby should suffice, otherwise `brew install ruby274` will get you
    there. `gem install bundler` installs bundler.
 2. Fetch Ruby dependencies with `bundle install`.
 3. Run `bundle exec jekyll serve` to get a local HTTP server hosting the site,
